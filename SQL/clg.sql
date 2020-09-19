@@ -1,0 +1,18 @@
+show databases;
+use clg_assignment;
+create database clg_assignment;
+use clg_assignment;
+create table Employee (Empno int,Ename varchar(20), Job varchar(20), Mgr int, Sal int check(sal>=0), constraint c1  check(mgr>=sal));
+CREATE TABLE Table1(id int PRIMARY KEY, C1 VARCHAR(30) ,PRIMARY KEY (id));
+show create table Employee;
+show tables;
+insert into employee values(101,'prof a','prof',5,10);
+insert into employee values(102,'prof b','assoc prof',10,100);
+insert into employee values(103,'prof c','prof',10,100);
+insert into employee values(104,'prof d','assoc prof',10,100);
+insert into employee values(105,'prof e','prof',10,100);
+select * from employee;
+alter table employee change Empno Employee_No int;
+insert into employee values(19,'prof x','prof',10,100);
+delete from employee where Employee_No=19;
+drop table employee;

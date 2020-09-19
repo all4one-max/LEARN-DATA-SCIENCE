@@ -1,0 +1,15 @@
+show databases;
+use school;
+create table Student(ID int, name varchar(100), AGE int);
+show tables;
+describe Student;
+drop table Faculty;
+drop table Faculty_alt;
+create table Faculty(Faculty_id int Primary Key, name varchar(100), course varchar(100) Not NULL, Salary int default 10000);
+describe Faculty;
+insert into Student values(4565 , 'Saurav', 17);
+insert into Student values(4564 , 'Manjot', 18);
+insert INTO Student (name , AGE, ID) VALUES('sarv', 18, 4564);
+insert INTO Student (name , ID, AGE) VALUES('vinayak', 4547, 18);
+insert INTO Student (name , ID) VALUES('mitansh', 4548);
+select * from Student;
